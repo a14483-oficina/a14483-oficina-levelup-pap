@@ -1,0 +1,288 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
+  padding: var(--space-5) var(--space-4);
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: var(--space-3);
+  padding: var(--space-8) var(--space-5);
+  background:
+    radial-gradient(
+      circle at 50% 0%,
+      rgba(113, 50, 245, 0.18),
+      transparent 60%
+    ),
+    var(--color-bg-card);
+}
+
+.heroIcon {
+  font-size: 72px;
+  line-height: 1;
+}
+
+.heroName {
+  font-size: var(--text-subheading);
+  font-weight: var(--weight-bold);
+  margin: 0;
+  letter-spacing: -0.5px;
+}
+
+.heroSubtitle {
+  color: var(--color-text-secondary);
+  margin: 0 0 var(--space-3);
+}
+
+.xpBlock {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.xpLabels {
+  display: flex;
+  justify-content: space-between;
+}
+
+.xpLabel {
+  font-size: var(--text-small);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--color-text-muted);
+}
+
+.xpValue {
+  font-size: var(--text-caption);
+  color: var(--color-text-primary);
+  font-weight: var(--weight-semibold);
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.sectionHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-3);
+}
+
+.sectionTitle {
+  font-size: var(--text-title);
+  font-weight: var(--weight-semibold);
+  margin: 0;
+  letter-spacing: -0.2px;
+}
+
+.statsGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-2);
+}
+
+.statCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-2);
+  padding: var(--space-4) var(--space-2);
+  text-align: center;
+}
+
+.statIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: var(--radius-md);
+  background: var(--color-primary-subtle);
+  color: var(--color-primary);
+}
+
+.statBody {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.statName {
+  font-size: var(--text-small);
+  color: var(--color-text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.statValue {
+  font-size: var(--text-subheading);
+  font-weight: var(--weight-bold);
+  color: var(--color-primary);
+  line-height: 1;
+  margin-top: 2px;
+}
+
+.equipmentCard {
+  padding: 0;
+}
+.itemsGrid {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.itemCard {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-3);
+  padding: var(--space-3);
+  position: relative;
+}
+
+.itemIcon {
+  width: 48px;
+  height: 48px;
+  border-radius: var(--radius-md);
+  background: var(--color-bg-sunken);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  color: var(--color-text-secondary);
+}
+
+.itemImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: var(--radius-md);
+}
+
+.itemBody {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}
+
+.itemName {
+  font-size: var(--text-body);
+  font-weight: 600;
+  color: var(--color-text-primary);
+}
+
+.itemDescription {
+  font-size: var(--text-caption);
+  color: var(--color-text-secondary);
+  margin: 0;
+}
+
+.itemStats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  margin-top: var(--space-1);
+}
+
+.itemStat {
+  font-size: var(--text-caption);
+  color: var(--color-primary);
+  font-weight: 600;
+}
+
+.itemRarity {
+  align-self: flex-start;
+}
+
+.equippedBadge {
+  position: absolute;
+  top: var(--space-3);
+  right: var(--space-3);
+}
+.itemsGrid {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.itemCard {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-3);
+  padding: var(--space-3);
+  position: relative;
+}
+
+.itemIcon {
+  width: 48px;
+  height: 48px;
+  border-radius: var(--radius-md);
+  background: var(--color-bg-sunken);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  color: var(--color-text-secondary);
+}
+
+.itemImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: var(--radius-md);
+}
+
+.itemBody {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}
+
+.itemName {
+  font-size: var(--text-body);
+  font-weight: 600;
+  color: var(--color-text-primary);
+}
+
+.itemDescription {
+  font-size: var(--text-caption);
+  color: var(--color-text-secondary);
+  margin: 0;
+}
+
+.itemStats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  margin-top: var(--space-1);
+}
+
+.itemStat {
+  font-size: var(--text-caption);
+  color: var(--color-primary);
+  font-weight: 600;
+}
+
+.itemRarity {
+  align-self: flex-start;
+}
+
+.equippedBadge {
+  position: absolute;
+  top: var(--space-3);
+  right: var(--space-3);
+}
+
+.itemEquipped {
+  border-color: var(--color-primary) !important;
+  box-shadow: 0 0 0 1px var(--color-primary-subtle);
+}

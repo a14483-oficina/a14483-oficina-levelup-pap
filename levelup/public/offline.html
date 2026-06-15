@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="pt-PT">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#7132f5" />
+    <title>LevelUP — Offline</title>
+    <style>
+      :root {
+        color-scheme: dark;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        min-height: 100svh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 24px;
+        background: #0a0a0f;
+        color: #f0f0f5;
+        font-family:
+          'IBM Plex Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        text-align: center;
+      }
+      .container {
+        max-width: 400px;
+      }
+      .logo {
+        width: 96px;
+        height: 96px;
+        margin: 0 auto 24px;
+        border-radius: 24px;
+        background: linear-gradient(135deg, #7132f5, #5b1ecf);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 48px;
+        font-weight: 700;
+        color: #fff;
+        box-shadow: 0 0 40px rgba(113, 50, 245, 0.4);
+      }
+      h1 {
+        font-size: 28px;
+        font-weight: 700;
+        margin: 0 0 12px;
+        letter-spacing: -0.5px;
+      }
+      p {
+        margin: 0 0 32px;
+        font-size: 16px;
+        line-height: 1.5;
+        color: #9497a9;
+      }
+      button {
+        background: #7132f5;
+        color: #fff;
+        border: none;
+        padding: 13px 24px;
+        font-size: 16px;
+        font-weight: 600;
+        border-radius: 12px;
+        cursor: pointer;
+        font-family: inherit;
+        transition: background 150ms ease;
+      }
+      button:hover {
+        background: #5b1ecf;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="logo">LU</div>
+      <h1>Estás offline</h1>
+      <p>
+        Conecta-te à internet para continuar a tua aventura no LevelUP.
+      </p>
+      <button onclick="window.location.reload()">Tentar novamente</button>
+    </div>
+  </body>
+</html>

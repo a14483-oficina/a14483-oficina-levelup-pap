@@ -1,0 +1,194 @@
+.page {
+  min-height: 100svh;
+  background:
+    radial-gradient(
+      circle at 50% -20%,
+      rgba(113, 50, 245, 0.18),
+      transparent 60%
+    ),
+    var(--color-bg-primary);
+  padding: var(--space-6) var(--space-4);
+}
+
+.container {
+  width: 100%;
+  max-width: 480px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
+  animation: fadeInUp var(--transition-normal) ease;
+}
+
+.header {
+  text-align: center;
+}
+
+.stepIndicator {
+  display: flex;
+  justify-content: center;
+  gap: var(--space-2);
+  margin-bottom: var(--space-5);
+}
+
+.dot {
+  width: 32px;
+  height: 4px;
+  border-radius: var(--radius-full);
+  background: var(--color-bg-elevated);
+  transition: background var(--transition-fast);
+}
+
+.dotActive {
+  background: var(--color-primary);
+}
+
+.title {
+  font-size: var(--text-subheading);
+  font-weight: var(--weight-bold);
+  margin: 0 0 var(--space-2);
+  letter-spacing: -0.5px;
+}
+
+.subtitle {
+  color: var(--color-text-secondary);
+  margin: 0;
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-5);
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  margin-top: var(--space-2);
+}
+
+/* Class selection */
+.classGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-3);
+}
+
+@media (min-width: 425px) {
+  .classGrid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.classCard {
+  text-align: left;
+  padding: var(--space-4);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.classCardSelected {
+  border-color: var(--color-primary) !important;
+}
+
+.classIcon {
+  font-size: 36px;
+  line-height: 1;
+}
+
+.classInfo {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.className {
+  font-size: var(--text-title);
+  font-weight: var(--weight-bold);
+  margin: 0;
+}
+
+.classDescription {
+  font-size: var(--text-caption);
+  color: var(--color-text-secondary);
+  margin: 0;
+}
+
+.classStats {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+  margin-top: var(--space-2);
+}
+
+.classStat {
+  display: flex;
+  justify-content: space-between;
+  font-size: var(--text-caption);
+}
+
+.classStatLabel {
+  color: var(--color-text-secondary);
+}
+
+.classStatValue {
+  color: var(--color-text-primary);
+  font-weight: var(--weight-semibold);
+}
+
+/* Confirm step */
+.confirmCard {
+  text-align: center;
+  padding: var(--space-8) var(--space-5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+.confirmIcon {
+  font-size: 64px;
+  line-height: 1;
+}
+
+.confirmName {
+  font-size: var(--text-subheading);
+  font-weight: var(--weight-bold);
+  margin: 0;
+}
+
+.confirmClass {
+  color: var(--color-text-secondary);
+  margin: 0 0 var(--space-3);
+}
+
+.statsRow {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-2);
+  width: 100%;
+  margin-top: var(--space-4);
+}
+
+.statBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-1);
+  padding: var(--space-3);
+  background: var(--color-bg-secondary);
+  border-radius: var(--radius-md);
+}
+
+.statBoxLabel {
+  font-size: var(--text-small);
+  color: var(--color-text-secondary);
+}
+
+.statBoxValue {
+  font-size: var(--text-title);
+  font-weight: var(--weight-bold);
+  color: var(--color-primary);
+}

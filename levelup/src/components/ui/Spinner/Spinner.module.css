@@ -1,0 +1,24 @@
+.spinner {
+  display: inline-block;
+  border: 3px solid var(--color-primary-subtle);
+  border-top-color: var(--color-primary);
+  border-radius: 50%;
+  animation: spin 0.7s linear infinite;
+}
+
+.fullScreen {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-4);
+  background: var(--color-bg-primary);
+  z-index: var(--z-modal);
+}
+
+.label {
+  font-size: var(--text-caption);
+  color: var(--color-text-secondary);
+}

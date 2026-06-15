@@ -1,0 +1,119 @@
+/* ============================================================================
+   LevelUP Design Tokens — Kraken-inspired Dark Theme
+   Adapted from agent.md §4.1. NEVER hardcode color/spacing values; use vars.
+   ============================================================================ */
+
+:root {
+  /* === Primary Brand (Kraken Purple) === */
+  --color-primary: #7132f5;
+  --color-primary-dark: #5741d8;
+  --color-primary-deep: #5b1ecf;
+  --color-primary-subtle: rgba(113, 50, 245, 0.16);
+  --color-primary-hover: #5b1ecf;
+  --color-primary-glow: rgba(113, 50, 245, 0.3);
+
+  /* === Backgrounds (DARK THEME) === */
+  --color-bg-primary: #0a0a0f;
+  --color-bg-secondary: #12121a;
+  --color-bg-tertiary: #1a1a26;
+  --color-bg-card: #16161f;
+  --color-bg-elevated: #1e1e2a;
+  --color-bg-input: #12121a;
+  --color-bg-overlay: rgba(0, 0, 0, 0.6);
+
+  /* === Text === */
+  --color-text-primary: #f0f0f5;
+  --color-text-secondary: #9497a9;
+  --color-text-muted: #686b82;
+  --color-text-inverse: #101114;
+
+  /* === Borders === */
+  --color-border: rgba(104, 107, 130, 0.24);
+  --color-border-strong: #dedee5;
+  --color-border-focus: #7132f5;
+
+  /* === Semantic === */
+  --color-success: #149e61;
+  --color-success-subtle: rgba(20, 158, 97, 0.16);
+  --color-success-text: #4ade80;
+  --color-error: #ef4444;
+  --color-error-subtle: rgba(239, 68, 68, 0.16);
+  --color-warning: #f59e0b;
+  --color-warning-subtle: rgba(245, 158, 11, 0.16);
+  --color-info: #3b82f6;
+  --color-info-subtle: rgba(59, 130, 246, 0.16);
+
+  /* === Rarity Colors (for items) === */
+  --color-rarity-common: #9497a9;
+  --color-rarity-uncommon: #149e61;
+  --color-rarity-rare: #3b82f6;
+  --color-rarity-epic: #7132f5;
+  --color-rarity-legendary: #f59e0b;
+
+  /* === Typography === */
+  --font-display: 'IBM Plex Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  --font-body: 'IBM Plex Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+  --text-hero: 48px;
+  --text-heading: 36px;
+  --text-subheading: 28px;
+  --text-title: 22px;
+  --text-body: 16px;
+  --text-button: 16px;
+  --text-caption: 14px;
+  --text-small: 12px;
+  --text-micro: 7px;
+
+  --weight-regular: 400;
+  --weight-medium: 500;
+  --weight-semibold: 600;
+  --weight-bold: 700;
+
+  --leading-tight: 1.17;
+  --leading-normal: 1.38;
+  --leading-relaxed: 1.71;
+
+  /* === Spacing === */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-10: 40px;
+  --space-12: 48px;
+  --space-16: 64px;
+
+  /* === Border Radius === */
+  --radius-sm: 6px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-xl: 16px;
+  --radius-full: 9999px;
+  --radius-circle: 50%;
+
+  /* === Shadows === */
+  --shadow-subtle: rgba(0, 0, 0, 0.15) 0px 4px 24px;
+  --shadow-micro: rgba(0, 0, 0, 0.2) 0px 1px 4px;
+  --shadow-glow: 0 0 20px rgba(113, 50, 245, 0.3);
+  --shadow-card: 0 2px 8px rgba(0, 0, 0, 0.3);
+
+  /* === Transitions === */
+  --transition-fast: 150ms ease;
+  --transition-normal: 250ms ease;
+  --transition-slow: 400ms ease;
+
+  /* === Z-index scale === */
+  --z-dropdown: 100;
+  --z-sticky: 200;
+  --z-modal-backdrop: 300;
+  --z-modal: 400;
+  --z-toast: 500;
+  --z-tooltip: 600;
+
+  /* === Layout === */
+  --bottom-nav-height: 64px;
+  --header-height: 56px;
+  --max-content-width: 480px;
+}

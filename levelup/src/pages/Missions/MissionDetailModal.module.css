@@ -1,0 +1,97 @@
+.body {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.heroRow {
+  display: flex;
+  gap: var(--space-3);
+  align-items: flex-start;
+}
+
+.icon {
+  flex-shrink: 0;
+  width: 56px;
+  height: 56px;
+  border-radius: var(--radius-lg);
+  background: var(--color-bg-secondary);
+  border: 1px solid var(--color-border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+}
+
+.heroText {
+  flex: 1;
+  min-width: 0;
+}
+
+.title {
+  margin: 0 0 var(--space-2);
+  font-size: var(--text-title);
+  font-weight: var(--weight-semibold);
+  color: var(--color-text-primary);
+  letter-spacing: -0.2px;
+}
+
+.heroBadges {
+  display: flex;
+  gap: var(--space-2);
+  flex-wrap: wrap;
+}
+
+.description {
+  margin: 0;
+  font-size: var(--text-body);
+  color: var(--color-text-secondary);
+  line-height: var(--leading-relaxed);
+}
+
+.statsGrid {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.statItem {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  padding: var(--space-3);
+  background: var(--color-bg-secondary);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  color: var(--color-text-secondary);
+}
+
+.statLabel {
+  flex: 1;
+  font-size: var(--text-caption);
+}
+
+.statValue {
+  color: var(--color-text-primary);
+  font-weight: var(--weight-semibold);
+}
+
+.completedBanner {
+  text-align: center;
+  font-size: var(--text-caption);
+  font-weight: var(--weight-semibold);
+  color: var(--color-success-text);
+  background: var(--color-success-subtle);
+  padding: var(--space-3);
+  border-radius: var(--radius-md);
+}
+
+.hint {
+  margin: 0;
+  font-size: var(--text-small);
+  color: var(--color-text-muted);
+  text-align: center;
+}

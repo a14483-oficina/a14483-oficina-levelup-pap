@@ -1,0 +1,15 @@
+.wrapper {
+  display: inline-flex;
+  align-items: center;
+  gap: 2px;
+  line-height: 1;
+}
+
+.filled {
+  color: var(--color-warning);
+}
+
+.empty {
+  color: var(--color-text-muted);
+  opacity: 0.5;
+}

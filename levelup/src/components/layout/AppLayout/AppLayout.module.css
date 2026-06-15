@@ -1,0 +1,14 @@
+.layout {
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+  background: var(--color-bg-primary);
+}
+
+.main {
+  flex: 1;
+  padding-bottom: calc(var(--bottom-nav-height) + env(safe-area-inset-bottom));
+  width: 100%;
+  max-width: var(--max-content-width);
+  margin: 0 auto;
+}

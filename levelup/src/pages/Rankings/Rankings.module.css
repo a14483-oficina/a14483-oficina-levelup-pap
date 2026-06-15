@@ -1,0 +1,82 @@
+.page {
+  padding: var(--space-5) var(--space-4);
+}
+
+.placeholderCard {
+  padding: 0;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  padding: var(--space-3);
+}
+
+.rowMe {
+  border-color: var(--color-primary) !important;
+  box-shadow: 0 0 0 1px var(--color-primary-subtle);
+}
+
+.top1 { border-color: #f59e0b !important; }
+.top2 { border-color: #9ca3af !important; }
+.top3 { border-color: #b45309 !important; }
+
+.position {
+  font-size: 24px;
+  width: 36px;
+  text-align: center;
+  flex-shrink: 0;
+}
+
+.classIcon {
+  font-size: 28px;
+  flex-shrink: 0;
+}
+
+.info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.username {
+  font-size: var(--text-body);
+  font-weight: 600;
+  color: var(--color-text-primary);
+}
+
+.youBadge {
+  color: var(--color-primary);
+  font-weight: 400;
+}
+
+.sub {
+  font-size: var(--text-caption);
+  color: var(--color-text-secondary);
+}
+
+.stats {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 2px;
+}
+
+.xp {
+  font-size: var(--text-caption);
+  font-weight: 600;
+  color: var(--color-primary);
+}
+
+.missions {
+  font-size: var(--text-small);
+  color: var(--color-text-muted);
+}
